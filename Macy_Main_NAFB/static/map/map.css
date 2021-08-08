@@ -1,0 +1,41 @@
+body, html {
+    height: 100%;
+    position:relative;
+    overflow:hidden;
+}
+
+#map_container {
+    display:flex;
+    justify-content: center;
+}
+  
+#macy-lower-map {
+    position:absolute;
+    max-width:1000%;
+    max-height:1000%;
+    left:0px;
+}
+
+#you {
+    height: 8%;
+    width: 5%;
+    position:absolute;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    position:absolute;
+  }
+
+#draw-here {
+    z-index: 1;
+    position:absolute;
+    max-width:2000%;
+    max-height:1000%;
+    left:0px;
+    top:0px;
+}

@@ -1,0 +1,18 @@
+{% extends 'base.html' %} {% block title %} Home {% endblock %} 
+{% block css %} <link rel="stylesheet" href="../static/confirm/select.css" /> {% endblock %}
+{% block content %}
+    {% if items %}
+    <h3>We found {{items|length}} result.</h3>
+    <ul>
+    {% for item in items %}
+        <li>
+            <p>{{items[item].section.section_name}} {{items[item].item_type}} made by {{items[item].brand_name}}</p>
+            <form class=confirm_item_form>
+                <button id={{items[item].section.section_number}}>Confirm</button>
+            </form>
+        </li>
+    {% endfor %}
+    </ul>
+    {% endif %}
+{% endblock %}
+{% block scripts %} <script src="../static/confirm/select.js"></script> {% endblock %}

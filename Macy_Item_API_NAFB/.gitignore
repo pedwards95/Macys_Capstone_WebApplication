@@ -128,11 +128,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-data.sql
-data.test.sql
-venv
 __pycache__
-TODO
-*/.git
-.github
-*.psd
+venv

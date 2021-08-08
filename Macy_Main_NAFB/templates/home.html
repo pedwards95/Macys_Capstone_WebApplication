@@ -1,0 +1,12 @@
+{% extends 'base.html' %} {% block title %} Home {% endblock %} 
+{% block css %} <link rel="stylesheet" href="../static/home/home.css" /> {% endblock %}
+{% block content %}
+    <h1>Welcome to the Macy's app!</h1>
+    <h3>What are you looking for?</h3>
+    <form id=macy_search_form>
+        <input type="text" id="macy-search-bar">
+        <button>Search</button>
+    </form>
+    <h4><a href="/map">Just show me the map!</a></h4>
+{% endblock %}
+{% block scripts %} <script src="../static/home/home.js"></script> {% endblock %}

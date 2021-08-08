@@ -1,19 +1,5 @@
 # python -m venv venv
 # source venv/Scripts/activate
-# pip install pylint
-# pip install ipython
-# pip install flask
-# pip install flask-wtf
-# pip install flask_debugtoolbar
-# pip install pylint-flask
-# pip install psycopg2-binary
-# pip install flask-sqlalchemy
-# pip install pylint-sqlalchemy
-# pip install pylint_flask_sqlalchemy
-# pip install sqlalchemy-utils
-# pip install python-dotenv
-#    then make a .flaskenv in root directory
-# pip install email_validator
 
 # pip freeze > requirements.txt
 
