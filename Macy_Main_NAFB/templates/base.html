@@ -9,8 +9,9 @@
 	</head>
 	<body>
 		<nav class="navbar">
-            <a href="/">Home</a>
-            <a href='/login'>Login</a>
+			<img src="/static/images/macy_logo.png" id="small_logo">
+            <a class="nav-button no-select" href="/">Home</a>
+            <a class="nav-button" href='/login'>Login</a>
 		</nav>
 
 		<section class="messages">
@@ -22,10 +23,38 @@
 		</section>
 
 		{% block content %} {% endblock %}
-
-		<footer>PRETEND IM A FOOTER</footer>
+		<footer>
+			<div class="wrapper">
+				<a href="https://www.facebook.com/Macys/">
+					<span>
+						<div class="icon facebook">
+						  <div class="tooltip">Facebook</div>
+						  <span><i class="fab fa-facebook-f"></i></span>
+						</div>
+					</span>
+				</a>
+				<a href="https://twitter.com/Macys?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+					<span>
+						<div class="icon twitter">
+						  <div class="tooltip">Twitter</div>
+						  <span><i class="fab fa-twitter"></i></span>
+						</div>
+					</span>
+				</a>
+				
+				<a href="https://www.instagram.com/macys/?hl=en">
+					<span>
+						<div class="icon instagram">
+							<div class="tooltip">Instagram</div>
+							<span><i class="fab fa-instagram"></i></span>
+						  </div>
+					</span>
+				</a>
+			  </div>
+		</footer>
 		
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
         {% block scripts %} <script src="/static/app.js"></script> {% endblock %}
 	</body>
 </html>

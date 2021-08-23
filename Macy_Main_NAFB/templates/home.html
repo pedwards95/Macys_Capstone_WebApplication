@@ -1,12 +1,20 @@
 {% extends 'base.html' %} {% block title %} Home {% endblock %} 
-{% block css %} <link rel="stylesheet" href="../static/home/home.css" /> {% endblock %}
+{% block css %} <link rel="stylesheet" href="/static/home/home.css" /> {% endblock %}
 {% block content %}
+<br/>
     <h1>Welcome to the Macy's app!</h1>
     <h3>What are you looking for?</h3>
     <form id=macy_search_form>
-        <input type="text" id="macy-search-bar">
-        <button>Search</button>
+        <input type="text" id="macy-search-bar" placeholder=" I'm looking for...">
+        <input type="submit" style="display: none" />
+        <br/>
+        <button id="macy-search-start">Search</button>
     </form>
-    <h4><a href="/map">Just show me the map!</a></h4>
+    <div id=searching-content style="display: none">
+        <p>Searching for related Items...</p>
+        <p>Note: The API goes into "sleep mode" when unused, and may take a moment to return your results.</p>
+        <div class="lds-dual-ring"></div>
+    </div>
+    <h4 id="show-me"><a href="/map">Just show me the map!</a></h4>
 {% endblock %}
 {% block scripts %} <script src="../static/home/home.js"></script> {% endblock %}

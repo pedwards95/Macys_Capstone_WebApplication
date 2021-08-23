@@ -1,15 +1,23 @@
 {% extends 'base.html' %} {% block title %} Home {% endblock %} 
 {% block css %} <link rel="stylesheet" href="../static/confirm/select.css" /> {% endblock %}
 {% block content %}
+<br/>
+<br/>
+<br/>
     {% if items %}
-    <h3>We found {{items|length}} result.</h3>
-    <ul>
+    <h3 id="we-found">We found {{items|length}} result{% if items|length > 1 %}s{% endif %}.</h3>
+    <ul id="item-list">
     {% for item in items %}
         <li>
-            <p>{{items[item].section.section_name}} {{items[item].item_type}} made by {{items[item].brand_name}}</p>
-            <form class=confirm_item_form>
-                <button id={{items[item].section.section_number}}>Confirm</button>
-            </form>
+            <div class="item-card">
+                <div class="item-card-title">Item: <span>{{items[item].item_type}}</span></div>
+                <div class="item-card-title">Section: <span>{{items[item].section.section_name}}</span></div>
+                <div class="item-card-title">Brand: <span>{{items[item].brand_name}}</span></div>
+                <span><img class="item-card-picture" src="/static/images/image-placeholder.jpg"></span>
+                <form class=confirm_item_form>
+                    <button class=confirm-item-button id={{items[item].section.section_number}}>Confirm</button>
+                </form>
+            </div>
         </li>
     {% endfor %}
     </ul>

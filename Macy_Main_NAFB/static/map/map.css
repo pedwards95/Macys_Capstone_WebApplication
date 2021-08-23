@@ -2,6 +2,7 @@ body, html {
     height: 100%;
     position:relative;
     overflow:hidden;
+    display:block;
 }
 
 #map_container {
@@ -18,7 +19,7 @@ body, html {
 
 #you {
     height: 8%;
-    width: 5%;
+    width: 90px;
     position:absolute;
 }
 
@@ -34,8 +35,121 @@ body, html {
 #draw-here {
     z-index: 1;
     position:absolute;
-    max-width:2000%;
+    max-width:1000%;
     max-height:1000%;
     left:0px;
     top:0px;
+}
+
+#demo-title {
+    position:absolute;
+    height:6%;
+    width:10%;
+    left:87%;
+    top:5.3%;
+    border: 4px solid grey;
+    background: rgb(71, 71, 71);
+    color:white;
+    text-align: center;
+    font-size:105%;
+}
+
+#demo-panel {
+    position:absolute;
+    height:18%;
+    width:10%;
+    left:87%;
+    top:10%;
+    border: 4px solid grey;
+    background: rgb(71, 71, 71);
+    z-index: 2;
+}
+
+#demo-up {
+    left:32%;
+    top:0%;
+    width:0;
+    height:0;
+    position:absolute; 
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 40px solid black;
+    border-top: none;
+    background: rgb(71, 71, 71);
+}
+
+#demo-down {
+    left:32%;
+    top:80%;
+    width:50%;
+    height:20%;
+    position:absolute;
+    width: 0; 
+    height: 0; 
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 40px solid black;
+    border-bottom: none;
+    background: rgb(71, 71, 71);
+
+}
+
+#demo-center {
+    left:29%;
+    top:25%;
+    width:40%;
+    height:50%;
+    position:absolute;
+    background: black;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 50%;
+}
+
+#demo-left {
+    left:8%;
+    top:30%;
+    width:25%;
+    height:40%;
+    position:absolute;
+    width: 0; 
+    height: 0; 
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent; 
+    border-right:40px solid black; 
+    border-left:none; 
+    background: rgb(71, 71, 71);
+}
+
+#demo-right {
+    left:75%;
+    top:30%;
+    width:25%;
+    height:40%;
+    position:absolute;
+    width: 0; 
+    height: 0; 
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-left: 40px solid black;
+    border-right: none;
+    background: rgb(71, 71, 71);
+}
+
+#demo-calculate {
+    left:-2%;
+    top:105%;
+    width:105%;
+    height:20%;
+    position:absolute;
+    background: rgb(71, 71, 71);
+    font-size:130%;
+    border: 6px solid rgb(196, 195, 195);
+    color:white;
 }

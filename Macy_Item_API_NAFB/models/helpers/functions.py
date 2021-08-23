@@ -1,3 +1,5 @@
+import json
+
 def makeItemListToDict(listOfItems):
     returnItems = {}
     for item in listOfItems:

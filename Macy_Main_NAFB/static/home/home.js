@@ -15,6 +15,8 @@ INIT();
 
 function itemSearch(evt) {
     evt.preventDefault();
+    const searchingContent = $("#searching-content")
+    searchingContent.css("display","inline");
     const text = $('#macy-search-bar').val().split(" ");
     let searchText;
     if (!filterWord(text[0])) searchText = text[0];

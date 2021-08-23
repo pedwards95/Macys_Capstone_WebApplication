@@ -1,12 +1,12 @@
 {% extends 'base.html' %} {% block title %} Map {% endblock %} 
-{% block css %} <link rel="stylesheet" href="../static/map/map.css" /> {% endblock %}
+{% block css %} <link rel="stylesheet" href="/static/map/map.css" /> {% endblock %}
 {% block content %}
     <div id="map_container">
         {% if destination %}
             <meta id="my-data" data-destination="{{destination}}">
         {%endif%}
         <img src="/static/images/Macy_Lower.jpg" alt="Map of Macy's lower floor" id="macy-lower-map">
-        <canvas id="draw-here" width="2000%" height="2000%" style="border:5px solid #ff0101;"></canvas></img>
+        <canvas id="draw-here" width="3000%" height="2000%"></canvas></img>
     </div>
 {% endblock %}
 {% block scripts %}
