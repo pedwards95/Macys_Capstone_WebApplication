@@ -25,9 +25,9 @@ This Flask app is based on a series of API's working together, and serves up dat
     - ARRAY [past searches]
 
 ## TODO
- - Log in
- - View moves with person
- - Path updates as you move
- - Better path AI
- - More clear sections
- - Many QOL changes
+ - [ ] Log in
+ - [ ] View moves with person
+ - [ ] Path updates as you move
+ - [ ] Better path AI
+ - [ ] More clear sections
+ - [ ] Many QOL changes
