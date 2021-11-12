@@ -6,6 +6,32 @@ h3 {
     font-size:150%;
 }
 
+#home-container{
+  position: relative;
+  top:0%;
+  height: 90%;
+  width: 80%;
+  left:10%;
+  border: 4vh ridge #FFB4A2;
+  border-top: 0;
+}
+
+#home-title{
+  position: relative;
+  top:42%;
+  left:29%;
+  font-size: 500%;
+  display:inline-block;
+}
+
+#home-greeting{
+  position: relative;
+  display:inline-block;
+  top:48%;
+  left:-8%;
+  font-size: 170%;
+}
+
 #macy_search_form {
     height:100%;
     width:50%;
@@ -16,18 +42,19 @@ h3 {
     position:relative;
     margin: auto;
     width:50%;
-    height:30%;
+    height:10%;
     left:25%;
-    font-size:150%;
+    top:50%;
+    font-size:170%;
     padding-left:10px;
 }
 #macy-search-start {
     position:relative;
     margin: auto;
     width:40%;
-    height:25%;
+    height:8%;
     left:30%;
-    top:1%;
+    top:52%;
     font-size:200%;
     background-color: #6D6875;
     color: white;
@@ -42,7 +69,7 @@ h3 {
     display: inline-block;
     width: 80px;
     height: 80px;
-    left:45%;
+    left:40%;
 }
 
 .lds-dual-ring:after {
@@ -68,5 +95,34 @@ h3 {
 
 #show-me {
     position:relative;
-    top:-14%;
+    left:44%;
+    top:-15%;
+    font-size: 110%;
+    display:inline-block;
+}
+
+#home-logo{
+  height:40%;
+  width:80%;
+  left:10%;
+  top:5%;
+  display:inline;
+  position:absolute;
+  opacity:.1;
+}
+
+#searching-content{
+  top:82%;
+  left:30%;
+  position:absolute;
+}
+
+#warning{
+  position:relative;
+  font-size: 300%;
+  color: red;
+  align-content: center;
+  text-align: center;
+  font-weight: bolder;
+  top:10%;
 }

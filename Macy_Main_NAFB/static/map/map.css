@@ -3,6 +3,7 @@ body, html {
     position:relative;
     overflow:hidden;
     display:block;
+    background: #FFCDB2;
 }
 
 #map_container {
@@ -68,8 +69,8 @@ body, html {
 #demo-up {
     left:32%;
     top:0%;
-    width:0;
-    height:0;
+    width:10%;
+    height:10%;
     position:absolute; 
     border-left: 40px solid transparent;
     border-right: 40px solid transparent;

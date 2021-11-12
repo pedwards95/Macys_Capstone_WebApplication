@@ -86,7 +86,6 @@ footer {
 
 html,
 body {
-  display: grid;
   height: 100%;
   width: 100%;
   font-family: "Poppins", sans-serif;
@@ -188,4 +187,31 @@ body {
 .wrapper .youtube:hover .tooltip::before {
   background-color: #de463b;
   color: #ffffff;
+}
+
+#b-bottom, #b-left, #b-right {
+	background: #fcdac8;
+	position: fixed;
+	}
+#b-left, #b-right {
+	top: 0; bottom: 0;
+	width: 1vw;
+	}
+#b-left { 
+    left: 0; 
+}
+#b-right { 
+    right: 0; 
+}	
+#b-bottom {
+    left: 0; 
+    right: 0;
+    height: 1vw;
+    bottom: 0;
+}
+    
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }

@@ -4,23 +4,25 @@
 <br/>
 <br/>
 <br/>
-    {% if items %}
-    <h3 id="we-found">We found {{items|length}} result{% if items|length > 1 %}s{% endif %}.</h3>
-    <ul id="item-list">
-    {% for item in items %}
-        <li>
-            <div class="item-card">
-                <div class="item-card-title">Item: <span>{{items[item].item_type}}</span></div>
-                <div class="item-card-title">Section: <span>{{items[item].section.section_name}}</span></div>
-                <div class="item-card-title">Brand: <span>{{items[item].brand_name}}</span></div>
-                <span><img class="item-card-picture" src="/static/images/image-placeholder.jpg"></span>
-                <form class=confirm_item_form>
-                    <button class=confirm-item-button id={{items[item].section.section_number}}>Confirm</button>
-                </form>
-            </div>
-        </li>
-    {% endfor %}
-    </ul>
-    {% endif %}
+    <div id=select-container>
+        {% if items %}
+        <h3 id="we-found">We found {{items|length}} result{% if items|length > 1 %}s{% endif %}.</h3>
+        <ul id="item-list">
+        {% for item in items %}
+            <li>
+                <div class="item-card">
+                    <div class="item-card-title">Item: <span>{{items[item].item_type}}</span></div>
+                    <div class="item-card-title">Section: <span>{{items[item].section.section_name}}</span></div>
+                    <div class="item-card-title">Brand: <span>{{items[item].brand_name}}</span></div>
+                    <span><img class="item-card-picture" src="/static/images/image-placeholder.jpg"></span>
+                    <form class=confirm_item_form>
+                        <button class=confirm-item-button id={{items[item].section.section_number}}>Confirm</button>
+                    </form>
+                </div>
+            </li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
 {% endblock %}
 {% block scripts %} <script src="../static/confirm/select.js"></script> {% endblock %}

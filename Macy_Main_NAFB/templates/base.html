@@ -4,14 +4,20 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>{% block title %}{% endblock %}</title>
+		<meta name="description" content="Macy's Locator" />
+		<meta name="title" property="og:title" content="Macy's Locator" />
+		<meta property="og:type" content="Website" />
+		<meta name="image" property="og:image" content="https://i.ibb.co/k4Gcc91/73b9d413c046fa11fe0917bf70ae38a3.png" />
+		<meta name="description" property="og:description" content="Macy Locator" />
+		<meta name="author" content="Paul Edwards" />
 		<link rel="stylesheet" href="/static/app.css" />
 		{% block css %} {% endblock %}
 	</head>
 	<body>
-		<nav class="navbar">
-			<img src="/static/images/macy_logo.png" id="small_logo">
+		<nav class="navbar sticky">
+			<img src="/static/images/macy_logo_small.png" id="small_logo">
             <a class="nav-button no-select" href="/">Home</a>
-            <a class="nav-button" href='/login'>Login</a>
+            <a class="nav-button" href='/login' hidden>Login</a>
 		</nav>
 
 		<section class="messages">
@@ -21,6 +27,9 @@
 			<p class="{{category}}">{{msg}}</p>
 			{% endfor %} {% endif %} {% endwith %}
 		</section>
+		<div id="b-left"></div>
+		<div id="b-right"></div>
+		<div id="b-bottom"></div>
 
 		{% block content %} {% endblock %}
 		<footer>

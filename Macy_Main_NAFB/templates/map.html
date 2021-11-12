@@ -1,9 +1,12 @@
 {% extends 'base.html' %} {% block title %} Map {% endblock %} 
 {% block css %} <link rel="stylesheet" href="/static/map/map.css" /> {% endblock %}
 {% block content %}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <div id="map_container">
         {% if destination %}
             <meta id="my-data" data-destination="{{destination}}">
+            <meta id="my-ip-data" data-destination="{{ip}}">
+            {{ip}}
         {%endif%}
         <img src="/static/images/Macy_Lower.jpg" alt="Map of Macy's lower floor" id="macy-lower-map">
         <canvas id="draw-here" width="3000%" height="2000%"></canvas></img>
